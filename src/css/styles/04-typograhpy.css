@@ -1,0 +1,29 @@
+/* font-family 속성 - 글꼴 */
+/* 루트 요소 */
+:root {
+  font-size: 15px;
+}
+
+body {
+  font-family: 'SUIT', sans-serif;
+  font-weight: 400;
+  font-size: 1vw;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+.size {
+  color: green;
+  line-height: 1;
+  font-weight: 300;
+  font-style: italic;
+
+  font-variant: small-caps;
+  font-family: 'prettendard variable', sans-sefif;
+  /* font: 24px 'pretendard variable'; */
+}
+
+/* 단위 - rem */
