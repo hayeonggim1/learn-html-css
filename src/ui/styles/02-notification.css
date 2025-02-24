@@ -1,0 +1,73 @@
+@import '/src/common/mini-reset.css';
+
+:root {
+  --small: 10px;
+  --medium: 15px;
+  --large: 20px;
+
+  --main-color: #22be61;
+  --sub-color: #929b90;
+
+  --spacing-10: 0.625rem;
+  --spacing-20: 1.25rem;
+  --spacing-30: 1.875rem;
+
+  --spacing-50: 3.125rem;
+  --spacing-60: 3.75rem;
+  --spacing-70: 4.375rem;
+}
+
+body {
+  margin: 50px;
+}
+
+h1 {
+  margin-bottom: 50px;
+}
+
+.notification {
+  --border-color: var(--sub-color);
+  --text-color: var(--main-color);
+  --base-spacing: var(--spacing-20);
+  --large-spacing: var(--spacing-70);
+  --base-gap: var(-spacing-10);
+
+  position: relative;
+
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  background: url(/src/assets/svg/pot.svg) no-repeat var(--spacing-20) 50%;
+  padding: var(--base-spacing) var(--base-spacing) var(--base-spacing) var(--large-spacing);
+}
+
+.notification-subject {
+  color: var(--main-color);
+}
+
+.notification-content {
+  font-size: var(--medium);
+  margin-top: 5px;
+  color: var(--sub-color);
+}
+
+.notification-time {
+  font-size: var(--small);
+  color: var(--main-color);
+  position: absolute;
+  top: var(--base-spacing);
+  right: var(--base-spacing);
+}
+
+&.green {
+  .notification-subject,
+  notification-time {
+    color: var(--green);
+  }
+}
+
+&.brown {
+  .notification-subject,
+  notification-time {
+    color: var(--brown);
+  }
+}
