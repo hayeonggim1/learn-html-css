@@ -1,0 +1,46 @@
+@import '/src/common/theme.css';
+
+/* CSS의 display 속성으로 특정 영역 보이지 않도록 설정 */
+/* .mon-friend-son{
+  display: none;
+} */
+
+body {
+  margin: 100px;
+}
+
+/* float 사용하기 */
+.card {
+  background: var(--pastel-pink);
+  border: 1px solid green;
+
+  .thumbnail {
+    background: var(--pastel-yellow);
+    /* overflow: auto; */
+    /* display: flow-root; */
+    /* width: 100%; */
+
+    border: 1px solid red;
+
+    /* float 요소의 부모에 직접 높이를 지정해서 일반 흐름을 벗어난 이미지가 다음 콘텐츠 영역 레이아웃에 영향을 주는 것을 피할 수 있음. */
+
+    img {
+      /* position: relative; */
+      /* float: left; */
+      width: 100px;
+      vertical-align: middle;
+      /* vertical-align: top; 이미지 아래쪽 여백을 없애기 위한 트릭 */
+      /* display: block; 이미지 아래쪽 여백을 없애기 위한 트릭 */
+    }
+  }
+
+  .subject {
+    background: var(--pastel-blue);
+  }
+
+  .content {
+    /* clear: both; */
+
+    background: var(--pastel-orange);
+  }
+}
