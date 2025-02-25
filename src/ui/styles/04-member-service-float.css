@@ -1,0 +1,33 @@
+body * {
+  box-sizing: border-box;
+  font-family: 'SUIT', sans-serif;
+  text-transform: uppercase;
+}
+
+/* 멤버 서비스 */
+.member-service {
+  background: yellow;
+}
+
+/* 멤버 링크 */
+.member-link {
+  background: pink;
+  display: flow-root;
+
+  li {
+    list-style: none;
+    float: left;
+  }
+  span {
+    margin-left: 4px;
+    float: left;
+    margin: 0 0.5em;
+    background: yellow;
+  }
+  a {
+    background: orange;
+    text-decoration: none;
+    color: black;
+    float: left;
+  }
+}

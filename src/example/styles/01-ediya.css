@@ -1,0 +1,19 @@
+.menu-wrap {
+  background: pink;
+  display: flow-root;
+}
+
+.menu {
+  float: right;
+  li {
+    list-style: none;
+    float: left;
+  }
+
+  a {
+    text-decoration: none;
+    color: #24388d;
+    padding: 10px;
+    font-size: 16px;
+  }
+}
