@@ -1,0 +1,26 @@
+@import '/src/common/best-reset.css';
+@import '/src/common/a11y.css';
+
+/* 모든 디바이스에 기본적으로 적용될색 - yellow */
+/* 모든 디바이스에 글자크기를 유연하게 설정 - vw 단위 */
+body {
+  background: yellow;
+  font-size: clamp(0.75rem, 2vw + 0.75rem, 3rem);
+
+  /* 뷰포트 크기(600px)에 따라 적용될 배경색 */
+  @media (min-width: 600px) {
+    background: pink;
+  }
+
+  /* 뷰포트 크기(1200px)에 따라 적용될 배경색 */
+  @media (min-width: 1000px) {
+    background: lime;
+  }
+}
+
+/* 가로보기모드에서 적용될 배경색 */
+/* @media (orientation: landscape) {
+  body {
+    background-color: orange;
+  }
+} */
