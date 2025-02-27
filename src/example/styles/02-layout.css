@@ -1,0 +1,27 @@
+@import '/src/common/best-reset.css';
+@import '/src/common/theme.css';
+
+.menu {
+  display: flow-root;
+  .cherry,
+  .browny {
+    @media (min-width: 768px) {
+      display: inline-block;
+    }
+  }
+}
+
+.item {
+  border: 1px solid black;
+  padding: 20px 22px 45px 22px;
+  margin: 20px;
+  text-align: center;
+  background: #f5f5f5;
+  width: 359px;
+  height: 373px;
+
+  img {
+    width: 204px;
+    height: 293px;
+  }
+}
