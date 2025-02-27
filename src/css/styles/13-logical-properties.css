@@ -1,0 +1,22 @@
+.case-01 {
+  writing-mode: vertical-lr;
+  border: 1px solid currentColor;
+  color: green;
+
+  /* float: left 속성을 논리속성으로 지정 */
+  float: inline-start;
+
+  /* 가로크기를 width 속성이 아닌 논리속성으로 지정한 케이스 */
+  inline-size: 400px;
+  /* 세로크기를 height 속성이 아닌 논리속성으로 지정한 케이스 */
+  block-size: 100px;
+  overflow: auto;
+  padding-inline-start: 10px;
+  padding-inline-end: 10px;
+
+  /* 논리속성 */
+  /* padding-inline: 20px;
+  padding-block: 20px;
+  margin-inline: 20px;
+  margin-block: 20px; */
+}

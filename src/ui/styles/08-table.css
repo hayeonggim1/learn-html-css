@@ -1,0 +1,77 @@
+@import '/src/common/best-reset.css';
+@import '/src/common/theme.css';
+
+/* 테이블 스타일링 */
+.table-wrapper {
+  margin-inline: 20px;
+  margin-block: 100px;
+  /* background: var(--pastel-yellow); */
+
+  block-size: 500px;
+  overflow: auto;
+}
+
+.table-styling {
+  border: 1px solid currentColor;
+  inline-size: 100%;
+  /* inline-size 100% 줘야 자식들 백분율이 확실해짐 */
+  border-collapse: seperate;
+  /* 테이블마다의 여백이 합쳐짐 */
+  border-spacing: 0;
+  position: relative;
+
+  caption {
+    font-size: 2rem;
+    line-height: 1.5;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
+
+  /* col */
+  .number {
+    inline-size: 10%;
+    /* text-align: center;  */
+    /* 적용되지 X */
+    /* color: red;  */
+    /* 적용되지 X */
+    /* background: var(--pastel-pink);  */
+    /* background - 적용됨 */
+  }
+
+  .name {
+    inline-size: 20%;
+  }
+
+  .email {
+    inline-size: 30%;
+  }
+
+  .phone {
+    inline-size: 30%;
+  }
+
+  td {
+    text-align: center;
+  }
+
+  th,
+  td {
+    padding: 10px;
+  }
+
+  thead {
+    position: sticky;
+    top: 0;
+  }
+
+  thead tr,
+  tfoot tr {
+    background: rgb(81, 80, 96);
+    color: #fff;
+  }
+
+  tbody tr:nth-child(even) {
+    background: var(--pastel-gray);
+  }
+}
