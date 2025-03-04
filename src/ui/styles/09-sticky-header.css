@@ -1,0 +1,44 @@
+@import '/src/common/best-reset.css';
+@import '/src/common/theme.css';
+
+body {
+  margin-block-end: 1200px;
+  background: rgb(232, 232, 232);
+}
+
+h1 {
+  background: rgb(232, 232, 232);
+  text-align: center;
+  position: sticky;
+  font-size: 2rem;
+  top: 100px;
+  inset-block-start: 0;
+  /* 겹치는 순서 제어 */
+  z-index: 1;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  position: sticky;
+  inset-block-start: 0;
+
+  li {
+    inline-size: 50vh;
+    background: #fff;
+    padding: 10px;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+strong {
+  background: var(--pastel-dark-blue);
+  inline-size: 50vh;
+  padding: 10px;
+  color: #fff;
+}
