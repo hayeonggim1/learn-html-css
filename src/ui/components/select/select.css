@@ -1,0 +1,44 @@
+@import '/src/common/modern-reset.css';
+@import '/src/common/theme.css';
+@import '/src/common/a11y.css';
+@import '/src/common/base.css';
+
+body {
+  h1 {
+    color: white;
+  }
+  background-color: black;
+}
+
+.select-layout {
+  margin: 20px;
+  display: grid;
+  columns: 3;
+
+  select {
+    width: 100px;
+    background:
+      url('/src/assets/icon/global.svg') no-repeat left center,
+      url('/src/assets/icon/triangle.svg') no-repeat right center;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    padding: 10px 10px 10px 30px;
+    border-radius: 8px;
+    border: 2px solid gray;
+    color: white;
+
+    &:focus {
+      border: 3px solid green;
+    }
+
+    option {
+      color: black;
+      &:focus {
+        background: white;
+      }
+    }
+  }
+}

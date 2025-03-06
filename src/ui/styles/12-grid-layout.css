@@ -1,0 +1,91 @@
+@import '/src/common/modern-reset.css';
+@import '/src/common/a11y.css';
+@import '/src/common/base.css';
+
+/* 플렉스를 활용한 반응형 레이아웃 */
+/* 플렉스 컨테이너 */
+.container {
+  display: grid;
+
+  /* grid item은 order 속성을 활용하여 배치 순서 변경 가능 */
+  /* navigation{
+  order: 1;
+ } */
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(12, 1fr);
+    max-width: 800px;
+    max-inline-size: 800px;
+    margin: 0 auto;
+
+    .header,
+    .navigation,
+    .footer {
+      grid-column: 1/-1;
+    }
+
+    .content,
+    .sidebar {
+      grid-column: span 6;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 1280px;
+    max-inline-size: 1280px;
+    .navigation,
+    .sidebar {
+      grid-column: span 3;
+    }
+  }
+}
+
+/* 헤더 */
+.header {
+  background: var(--pastel-coral);
+  height: 10vh;
+  /* @media (min-width: 1024px) {
+    grid-row: 1 / span 12;
+    grid-column: 1;
+  } */
+}
+
+/* 내비게이션 */
+.navigation {
+  height: 15vh;
+  background: var(--pastel-green);
+  /* @media (min-width: 1024px) {
+    grid-row: 2 / span 4;
+    grid-column: 1 / span 3;
+  } */
+}
+
+/* 메인 콘텐츠 */
+.content {
+  height: 40vh;
+  background: var(--pastel-aqua);
+  /* @media (min-width: 1024px) {
+    grid-row: 2 / span 4;
+    grid-column: 4 / span 6;
+  } */
+}
+
+/* 사이드 바 */
+.sidebar {
+  height: 25vh;
+  background: var(--pastel-yellow);
+  /* @media (min-width: 1024px) {
+    grid-row: 2 / span 4;
+    grid-column: 10 / span 3;
+  } */
+}
+
+/* 푸터 */
+.footer {
+  height: 10vh;
+  background: var(--pastel-lavender);
+  /* @media (min-width: 1024px) {
+    grid-row: 6;
+    grid-column: 1 / span 12;
+  } */
+}
